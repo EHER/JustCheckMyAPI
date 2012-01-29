@@ -9,14 +9,14 @@ help:
 
 clean:
 	@echo "Cleaning responses..."
-	@rm -rf responses/*
+	@rm -r responses/*
 	@echo "Clear!"
 
 run: clean
 	@echo "Running..."
 	@mkdir -p responses
-	@cd responses; wget -i ../urls.txt -x -q
-	@cd responses; git init; git add -A .; git commit -am "updated" 
+	@cd responses; wget -i ../urls.txt -x -nv
+	@cd responses; git init; git add -A; git commit -am "updated"
 	@echo "Done!"
 
 log:
