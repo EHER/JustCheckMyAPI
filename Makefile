@@ -6,11 +6,13 @@ help:
 	@echo "run\t\tCheck API Status and save responses
 
 clean:
-	@echo "Cleaning..."
+	@echo "Cleaning responses..."
 	@rm -rf responses/*
+	@echo "Clear!"
 
 run: clean
-	@echo "Removing saved responses..."
+	@echo "Running..."
+	@mkdir -p responses
 	@cd responses; wget -i ../urls.txt -x
 	@echo "Done!"
 
