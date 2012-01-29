@@ -1,5 +1,6 @@
 # Just Check My API
 
+
 ## Pq?
 O objetivo dessa parada é provar o conceito de que devemos 
 monitorar as APIs e garantir que uma vez que ela respondeu 
