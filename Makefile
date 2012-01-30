@@ -9,7 +9,7 @@ help:
 
 clean:
 	@echo "Cleaning responses..."
-	@rm -r responses/*
+	@rm -rf responses/*
 	@echo "Clear!"
 
 run: clean
