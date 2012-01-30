@@ -1,5 +1,5 @@
 # Just Check My API
-
+My APIs still work?
 
 ## Pq?
 O objetivo dessa parada é provar o conceito de que devemos 
@@ -10,12 +10,12 @@ ou eu vou ser alertado de eventuais diferenças.
 ## O q?
 Tentei fazer isso da forma mais rápida e que tivesse um 
 resultado confiável. A ideia é que a partir de uma lista
-de chamadas (urls.txt) eu obtenha um resposta específica
+de chamadas (urls.txt) eu obtenha uma resposta específica
 e imutável para cadas uma das urls. Essa resposta vai
 ser salva e na próxima vez que o programa rodar, se 
-houver diferença, a nova resposta vai substituir a 
-anterior. Isso permite que ao consultar o log de 
-alterações eu saiba se algo mudou e o que mudou (diff).
+houver diferença, será atualizada no repositório. Isso 
+permite que ao consultar o log de alterações eu saiba 
+se algo mudou, o que mudou (diff) e quando.
 
 ## Como?
 Para fazer a brincadeira rodar vc vai precisar de 3 coisas:
@@ -30,7 +30,7 @@ seguida commitar em um repositório local do git para
 preservar um histórico.
 
 ## E agora?
-Basta clonar, criar a sua lista de urls e rodar
+Basta clonar esse projeto, criar a sua lista de urls e rodar
     make run
 
 O comando pode ser rodado quando vc ficar em dúvida sobre
@@ -44,3 +44,6 @@ Esse foi só um protótipo da funcionalidade. Dependendo da
 aceitação e do interesse, podemos fazer uma versão mais
 simpática ou ainda um site que faça todo o trabalho.
 
+## Problemas conhecidos?
+Algumas chamadas podem comportar horário da requisição ou
+algum tipo de data. Isso resultaria em um alarme falso.
